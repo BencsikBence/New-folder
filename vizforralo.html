@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vízforraló szimulátor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vízforraló Szimulátor</h1>
+        
+        <!-- Bemeneti hőfok és gomb kártya -->
+        <div class="card input-card">
+            <label for="temperature">Bemeneti hőfok:</label>
+            <input type="number" id="temperature" placeholder="Add meg a hőfokot °C-ban" min="0" max="100">
+            <button id="startButton">Forraló be/ki</button>
+        </div>
+
+        <!-- Állapot kártya -->
+        <div class="card status-card">
+            <p id="status">Állapot: Kikapcsolva</p>
+        </div>
+        <h2>Rögzített adatok</h2>
+        <!-- Aktuális hőfok kártya -->
+        <div class="card temperature-card">
+            <p id="currentTemp">Aktuális hőfok: 0°C</p>
+        </div>
+
+        <!-- Fogyasztás kártya -->
+        <div class="card consumption-card">
+            <p id="powerConsumption">Fogyasztás: 0 kW</p>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
